@@ -1,0 +1,167 @@
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #747704;
+}
+
+a:visited {
+    color: #747704;
+}
+
+a:hover {
+	color: #f7931d;
+}
+
+a:active {
+	color: #f41e1e;
+}
+
+.wrapper {
+	max-width: 850px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header {
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: nowrap;
+	-webkit-flex-wrap: nowrap;
+	color: #bcbbbb;
+	width: 100%;
+	border-bottom: 3px solid #bcbbbb;
+	margin-bottom: 3%;
+}
+
+.header-logo {
+	width: 30%;
+}
+
+.logo {
+	width: 100%;
+	max-width: 100px;
+	margin-bottom: 2%;
+}
+
+.header-right {
+	width: 70%
+}
+
+.hero-image {
+	margin-bottom: 5%;
+}
+
+.featured {
+	width: 100%;
+}
+
+img {
+	width: 100%;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
+	text-align: right;
+	font-weight: 100;
+	font-size: 48px;
+	margin: 1% 1% 0% 0%;
+}
+
+h2 {
+	text-transform: uppercase;
+	text-align: right;
+	font-weight: 100;
+	font-size: 16px;
+	margin: 0% 1% 0% 0%;
+}
+
+h3 {
+	color: #bcbbbb;
+	font-weight: 300;
+	font-size: 24px;
+	margin: 0 0 1% 1%;
+}
+
+h4 {
+	text-align: center;
+	text-transform: uppercase;
+	color: #747704;
+	margin: 0;
+}
+
+/* Changes based on screen width*/
+
+@media screen and (max-width: 500px) {
+
+	.featured-list {
+		width: 100%;
+		display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+		flex-direction: column;
+	}
+
+	.featured-item {
+		width: 100%;
+		margin-bottom: 5%;
+	}
+
+	h1 { font-size: 32px;}
+	h2 { font-size: 16px;}
+	h4 { font-size: 18px;}
+
+}
+
+@media screen and (min-width: 501px) {
+
+	.featured-list {
+		width: 100%;
+		display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+		display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+		display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	}
+
+	.featured-item {
+		width: calc((100% / 2) - 1em);
+		margin-right: 0;
+		margin-bottom: 3%;
+		min-width: 200px;
+	}
+
+	.featured-item:first-of-type {
+		margin-right: 1.5em;
+	}
+
+	h4 {font-size: 20px;}
+}
+
+@media screen and (min-width: 680px) {
+	.featured-list {
+		width: 100%;
+		display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+		display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+		display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	}
+
+	.featured-item {
+		width: calc((100% / 3) - 1em);
+		margin-right: 1.5em;
+		margin-bottom: 3%;
+		min-width: 200px;
+	}
+
+	.featured-item:last-of-type {
+		margin-right: 0em;
+	}
+
+	h4 {font-size: 22px;}
+}
