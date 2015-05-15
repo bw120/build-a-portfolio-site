@@ -1,0 +1,4 @@
+-change hero image to carousel of project portfolio highlights
+-update images in featured work to real images and add links
+-add links to LinkedIn, online resume, contact info
+-change name of repository so project page URL is simpler such as just "portfolio"
