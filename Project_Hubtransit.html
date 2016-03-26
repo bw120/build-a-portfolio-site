@@ -5,14 +5,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
 		<title>Ben Wright's Portfolio</title>
-
-		<link rel="stylesheet" href="CSS/bootstrap.min.css">
-		<script src="js/jquery-2.1.4.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="CSS/style.css">
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
 		<link href="http://weloveiconfonts.com/api/?family=fontawesome|zocial" rel="stylesheet" type="text/css">
-		<link href='http://fonts.googleapis.com/css?family=Lato:200,300,400' rel='stylesheet' type='text/css'>
-
 	</head>
 	<body>
 		<div class="wrapper">
@@ -23,124 +18,32 @@
 				</div>
 				<div class="header-right"><h1 class="header-text">Ben Wright</h1><h2 class="header-text">Front-End Web Developer</h2></div>
 			</div>
-			<div class="hero-image">
+			<div class="project-wrapper">
+				<div class="project-item project-img">
 
-			  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
-			    <!-- Indicators -->
-			    <ol class="carousel-indicators">
-			      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-			      <li data-target="#myCarousel" data-slide-to="1"></li>
-			      <li data-target="#myCarousel" data-slide-to="2"></li>
-			    </ol>
+					<a href="http://www.hubtransit.com">
+					<picture>
+						<source media="(min-width: 501px)" srcset="images/hubtransit_c_1x.png, images/hubtransit_c.png 2x"/>
+						<img class="feature-img" src="images/hubtransit_c_1x.png" alt="Hubtransit">
+					</picture>
+					</a>
 
-			    <!-- Wrapper for slides -->
-			    <div class="carousel-inner" role="listbox">
-			      <div class="item active">
-			      	<div class="item-content">
-			      		<a class="item-link" href="Project_Hubtransit.html">
-				        <img src="images/hubtransit_c.png" alt="Hubtransit">
-				        <div class="caption">Hubtransit</div>
-					    </a>
-				    </div>
-			      </div>
-			      <div class="item">
-			      	<div class="item-content">
-			      		<a class="item-link" href="Project_nMap.html">
-				        <img src="images/neighborhoodMap_c.png" alt="Neighborhood Map">
-				        <div class="caption">Neighborhood Map</div>
-					    </a>
-				    </div>
-			      </div>
-			      <div class="item">
-			      	<div class="item-content">
-			      		<a class="item-link" href="Project_ArcadeGame.html">
-				        <img src="images/ArcadeGame_2_c.png" alt="Arcade Game">
-				        <div class="caption">Arcade Game Clone</div>
-					    </a>
-				     </div>
-			      </div>
+				</div>
+				<div class="project-item project-overview">
+					<h4 class="proj-title">Hubtransit</h4>
+					<span class="proj-attr">Date: </span> March 2016
+					<p><span class="proj-attr">Live link:</span> <a href="http://www.hubtransit.com"> www.hubtransit.com</a>
+					<p><span class="proj-attr">GitHub: </span> <a href="https://github.com/bw120/MBTA-Commuter"> https://github.com/bw120/MBTA-Commuter</a>
+					<p><span class="proj-attr">Languages: </span> JavaScript, HTML, CSS</a>
+					<p><span class="proj-attr">Skills Demonstrated: </span>AngularJS, AJAX, HTML, CSS</a>
 
-			    </div>
-			    <!-- Controls -->
-			    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-			      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				</div>
+				<div class="project-item project-description"><span class="proj-attr">Description: </span>Using the AngularJS framework, I developed this app to easily get arrival predictions and service alerts for your commute on the MBTA (Boston transit system). The app uses the MBTA API to get information about each route. The user authentication and user data is handled through the Firebase api. This app is great for anyone that uses multiple transit lines in their commute and wants to see at a glance any service alerts, delays and arrival predictions.
 
-			    </a>
-			    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-			      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-			      <span class="sr-only">Next</span>
-			    </a>
-			  </div>
-
-
-			</div>
-			<div class="featured">
-				<div class="featured-header"><h3>Featured Work</h3></div>
-				<div class="featured-list">
-					<div class="featured-item">
-						<a href="Project_Hubtransit.html">
-							<figure>
-								<picture>
-									<source media="(max-width: 500px)" srcset="images/hubtransit_c.png"/>
-									<source media="(min-width: 501px)" srcset="images/hubtransit_c_1x.png 1x, images/hubtransit_c.png 2x"/>
-									<img class="feature-img" src="images/hubtransit_c.png" alt="Hubtransit">
-								</picture>
-								<figcaption>Hubtransit</figcaption>
-							</figure>
-						</a>
-					</div>
-					<div class="featured-item">
-						<a href="Project_nMap.html">
-							<figure>
-								<picture>
-									<source media="(max-width: 500px)" srcset="images/neighborhoodMap_c.png"/>
-									<source media="(min-width: 501px)" srcset="images/neighborhoodMap_c_1x.png 1x, images/neighborhoodMap_c.png 2x"/>
-									<img class="feature-img" src="images/neighborhoodMap_c.png" alt="Neighborhood Map">
-								</picture>
-								<figcaption>Neighborhood Map</figcaption>
-							</figure>
-						</a>
-					</div>
-					<div class="featured-item">
-						<a href="Project_Optimization.html">
-							<figure>
-								<picture>
-									<source media="(max-width: 500px)" srcset="images/Optimization_2_c_1x.jpg"/>
-									<source media="(min-width: 501px)" srcset="images/Optimization_2_c_1x.jpg 1x, images/Optimization_c.jpg 2x"/>
-									<img class="feature-img" src="images/Optimization_2_c_1x.jpg" alt="Website Optimization">
-								</picture>
-								<figcaption>Website Optimization</figcaption>
-							</figure>
-						</a>
-					</div>
-
-					<div class="featured-item">
-						<a href="Project_ArcadeGame.html">
-							<figure>
-								<picture>
-									<source media="(max-width: 500px)" srcset="images/ArcadeGame_c_1x.png"/>
-									<source media="(min-width: 501px)" srcset="images/ArcadeGame_c_1x.png 1x, images/ArcadeGame_c.png 2x"/>
-									<img class="feature-img" src="images/ArcadeGame_c_1x.png" alt="Arcade Game">
-								</picture>
-								<figcaption>Arcade Game Clone</figcaption>
-							</figure>
-						</a>
-					</div>
-
-					<div class="featured-item">
-						<a href="Project_iResume.html">
-							<figure>
-								<picture>
-									<source media="(min-width: 501px)" srcset="images/Resume_c_1x.jpg 1x, images/Resume_c.jpg 2x"/>
-									<img class="feature-img" src="images/Resume_c_1x.jpg" alt="Online Resume">
-								</picture>
-								<figcaption>Online Resume</figcaption>
-							</figure>
-						</a>
-					</div>
 
 				</div>
 			</div>
+
 			<div class="contact-info">
 				<span class="contact-item email"><a href="mailto:benwright120@yahoo.com"><span class="icon zocial-email"></span> benwright120@yahoo.com</a></span>
 				<span class="contact-item linkedIn"><a href="https://www.linkedin.com/in/bw120"><span class="icon zocial-linkedin"></span> bw120</a></span>
